@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/e2313ae35c.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <h1>Baixar músicas youtube</h1>
     <form action="{{ url_for('processar_formulario') }}" method="post">
         <input type="text" name="url" id="url" required>
-        <input type="submit" value="Enviar" id="btn">
+        <button type="submit" value="img" id="btn">
+            <i class="fa-solid fa-play" style="color: #ffe438;"></i>
+        </button>
     </form>
     <div id="text">
         <h2>Agradeço por testar ai!</h3>
@@ -38,7 +41,8 @@
             width: 600px;
             height: 40px;
             margin: 30px 0px;
-            
+            font-size: 19px;
+            padding: 5px;
         }
         #btn{
             width: 100px;
@@ -46,9 +50,9 @@
             margin: 0px 5px;
             background-color: #3a3a3a;
             color: #fff;
-            cursor: pointer;
-            font-size: 12px;
+            font-size: 21px;
             font-family: 'nabla', sans-serif;
+            border-bottom: 1px solid #fff;
         }
 
         #text{
@@ -79,6 +83,9 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
+        }
+        i{
+            font-size: 21px;
         }
 
     </style>
