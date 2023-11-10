@@ -11,22 +11,17 @@ Flask: Utilizado como framework web para o desenvolvimento rápido e eficiente.
 
 YouTube-dl: Biblioteca para extração de informações e download de vídeos do YouTube.
 
-Como Usar
+Como Usar:
+
 Clone este repositório:
-
-bash
-Copy code
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
+
 Instale as dependências:
-
-bash
-Copy code
 pip install -r versions.txt
-Execute o aplicativo:
 
-bash
-Copy code
+Execute o aplicativo:
 python app.py
+
 Acesse o aplicativo em http://localhost:5000 no seu navegador.
 
 Insira o link do vídeo do YouTube na interface e clique no botão de download.
