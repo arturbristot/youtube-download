@@ -1,0 +1,5 @@
+Entre no diretorio e execute o venv(ys-DW)
+
+python app.py
+
+e seja feliz.
