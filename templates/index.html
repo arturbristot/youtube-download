@@ -10,10 +10,19 @@
     <h1>Baixar músicas youtube</h1>
     <form action="{{ url_for('processar_formulario') }}" method="post">
         <input type="text" name="url" id="url" required>
+        
+        <select name="format" id="format">
+            <option value="mp3">mp3</option>
+            <option value="mp4">mp4</option>
+        </select>
+
         <button type="submit" value="img" id="btn">
             <i class="fa-solid fa-play" style="color: #ffe438;"></i>
         </button>
+        
     </form>
+
+
     <div id="text">
         <h2>Agradeço por testar ai!</h3>
         <p>Direitos reservados pro bristot.</p>
@@ -33,6 +42,18 @@
             background-color: #111111;
             margin-top: 27vh;
         }
+
+        select{
+            width: 100px;
+            height: 40px;
+            font-size: 19px;
+            padding: 5px;
+            background-color: #3a3a3a;
+            color: #fff;
+            border-bottom: 1px solid #fff;
+            margin: 0px 5px;
+        }
+
         h1{
             font-size: 90px;
             font-family: 'nabla', sans-serif;
@@ -44,10 +65,11 @@
             font-size: 19px;
             padding: 5px;
         }
+
+
         #btn{
             width: 100px;
             height: 40px;
-            margin: 0px 5px;
             background-color: #3a3a3a;
             color: #fff;
             font-size: 21px;
